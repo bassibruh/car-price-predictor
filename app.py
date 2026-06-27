@@ -35,18 +35,29 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-
+    # HTML form se data nikalna (safely fallback ke saath)
     company = request.form.get("company")
-    car_model = request.form.get("car_models")
-    year = int(request.form.get("year"))
+    
+    # Agar HTML me name='car_model' ho ya name='car_models', dono handle ho jayega
+    car_model = request.form.get("car_models") or request.form.get("car_model")
+    
+    year_raw = request.form.get("year")
     fuel_type = request.form.get("fuel_type")
-    kms_driven = int(request.form.get("kilo_driven"))
+    
+    # Kms driven ke liye dono possible names check kar rha hai
+    kms_raw = request.form.get("kilo_driven") or request.form.get("kms_driven")
 
+    # Error se bachne ke liye defaults lagaye hain
+    year = int(year_raw) if year_raw else 2015
+    kms_driven = int(kms_raw) if kms_raw else 50000
+
+    # Dataframe banana prediction ke liye
     data = pd.DataFrame(
         [[car_model, company, year, kms_driven, fuel_type]],
         columns=["name", "company", "year", "kms_driven", "fuel_type"],
     )
 
+    # Price predict karna
     prediction = model.predict(data)
 
     return str(round(prediction[0], 2))
