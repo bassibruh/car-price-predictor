@@ -85,7 +85,7 @@ Raw Input (User Form)
 
 | Property | Details |
 | :--- | :--- |
-| **Source** | [Quikr Used Cars Dataset — Kaggle]([https://www.kaggle.com/datasets/manishkr1754/quikr-used-car-dat](https://github.com/bassibruh/car-price-predictor/blob/main/quikr_car.csv)) |
+| **Source** | [Quikr Used Cars Dataset](https://github.com/bassibruh/car-price-predictor/blob/main/quikr_car.csv) |
 | **Raw Records** | ~825 entries |
 | **After Cleaning** | ~816 usable records |
 | **Target Variable** | `Price` (INR) |
