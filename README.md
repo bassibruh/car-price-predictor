@@ -153,9 +153,9 @@ Then open your browser and go to: `http://localhost:5000`
 BCA Final Year | IIMT University, Meerut  
 📊 Aspiring Data Analyst | SQL • Python • Power BI • Excel
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/your-username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/aditya-singh-8a0a2a35b)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/bassibruh)
 
 ---
 
-<p align="center">Made with ❤️ and lots of data cleaning</p>
+
